@@ -1,8 +1,8 @@
-FROM resin/rpi-raspbian:wheezy
+FROM resin/rpi-buildstep-armv6hf:latest
 
 # Install Python and picamera lib
 RUN apt-get update
-RUN apt-get install -y python python-dev libraspberrypi-bin
+RUN apt-get install -y python python-dev libraspberrypi-bin python-picamera
 
 # add the root dir to the /app dir in the container env
 ADD . /app
