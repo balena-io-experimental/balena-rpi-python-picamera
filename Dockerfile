@@ -1,5 +1,4 @@
-FROM resin/rpi-raspbian:wheezy-2015-01-12
-RUN echo "deb [arch=armhf] http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi firmware" > /etc/apt/sources.list
+FROM resin/rpi-raspbian:wheezy-2015-01-15
 
 # Install Python, pip and the camera module firmware
 RUN apt-get update
