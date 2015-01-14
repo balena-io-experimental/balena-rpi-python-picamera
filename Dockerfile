@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:wheezy-2015-01-12
+FROM resin/rpi-raspbian:latest
 
 # Install Python, pip and the camera module firmware
 RUN apt-get update
