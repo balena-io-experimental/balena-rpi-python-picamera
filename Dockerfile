@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:wheezy-2015-01-15
+FROM resin/rpi-raspbian:jessie
 
 # Install Python, pip and the camera module firmware
 RUN apt-get update
@@ -10,5 +10,5 @@ RUN pip install picamera
 ADD . /app
 
 # tell python to execute demo.py
-CMD ["python", "/app/demo.py"]
+CMD modprobe bcm2835-v4l2 && python /app/demo.py
 
