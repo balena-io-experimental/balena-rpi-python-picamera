@@ -20,9 +20,5 @@ RUN pip install -r /requirements.txt
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 
-#run main.py when the container starts
-CMD modprobe bcm2835-v4l2 && python demo.py
+CMD ["bash","start.sh"]
 
-RUN ps -ef
-WORKDIR /data
-CMD ["python","-m SimpleHTTPServer 80"]
