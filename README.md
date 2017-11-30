@@ -12,4 +12,4 @@ This option can be found in the `Actions` tab in your device dashboard.
 
 ![Actions Tab](/img/enable-public-URLs.png)
 
-This example makes use of the awesome [picamera](http://picamera.readthedocs.org/en/release-1.8/) python module, which natively controls the camera module and does not depend on raspistill.
+This example makes use of the awesome [picamera](http://picamera.readthedocs.io/en/latest/) python module, which natively controls the camera module and does not depend on raspistill.
