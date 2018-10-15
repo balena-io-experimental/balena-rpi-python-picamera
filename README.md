@@ -1,12 +1,12 @@
-#resin.io + python + raspberry pi camera module
+# balena + python + raspberry pi camera module
 
-This is a simple app that demonstrates how to get started with the raspberry pi camera module. All it does is snap one photo and then stores it in the /data directory on the pi. 
+This is a simple app that demonstrates how to get started with the raspberry pi camera module. All it does is snap one photo and then stores it in the /data directory on the pi.
 
-You will need to make some changes to the downloaded RPI/RPI2 image to enable the camera, instructions here -> [https://docs.resin.io/learn/develop/hardware/i2c-and-spi/#raspberry-pi-camera-module](https://docs.resin.io/learn/develop/hardware/i2c-and-spi/#raspberry-pi-camera-module)
+You will need to make some changes to the Raspberry Pi device configuration to enable the camera, instructions here -> [https://docs.balena.io/learn/develop/hardware/i2c-and-spi/#raspberry-pi-camera-module](https://docs.balena.io/learn/develop/hardware/i2c-and-spi/#raspberry-pi-camera-module)
 
-The /data directory allows the data, in this case the image, to persist between code deployments with [resin.io](https://resin.io/). Then you can use the web terminal session to poke around on the pi itself and see that your photo was successfully saved in the /data directory.
+The /data directory allows the data, in this case the image, to persist between code deployments with [balena](https://balena.io/). Then you can use the web terminal session to poke around on the pi itself and see that your photo was successfully saved in the /data directory.
 
-A file server is running on the device, by using python's simplehttpserver. That way you can view the image taken by simply using resin's public url.
+A file server is running on the device, by using python's simplehttpserver. That way you can view the image taken by simply using the public url of the device.
 
 This option can be found in the `Actions` tab in your device dashboard.
 
